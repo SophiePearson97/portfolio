@@ -1,0 +1,9 @@
+.contact-card {
+  padding: 28px;
+  display: grid;
+  gap: 16px;
+}
+
+.contact-card p {
+  color: var(--text);
+}

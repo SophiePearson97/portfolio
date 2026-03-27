@@ -1,0 +1,27 @@
+.career-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.career-card {
+  padding: 28px;
+}
+
+.career-card ul {
+  margin-top: 18px;
+  display: grid;
+  gap: 12px;
+}
+
+.career-card li {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+}
+
+@media (max-width: 768px) {
+  .career-grid {
+    grid-template-columns: 1fr;
+  }
+}

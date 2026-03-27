@@ -1,0 +1,27 @@
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.skills-card {
+  padding: 28px;
+}
+
+.skills-card ul {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.skills-card li {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
