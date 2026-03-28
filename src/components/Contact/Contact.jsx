@@ -13,13 +13,10 @@ const Contact = () => {
 
       <div className="contact-card card">
         <p>
-          <strong>Email:</strong> your@email.com
+          <strong>Email:</strong> s.pearson97@yahoo.co.uk
         </p>
         <p>
-          <strong>GitHub:</strong> github.com/yourusername
-        </p>
-        <p>
-          <strong>LinkedIn:</strong> linkedin.com/in/yourusername
+          <strong>GitHub:</strong> https://github.com/SophiePearson97
         </p>
       </div>
     </section>
