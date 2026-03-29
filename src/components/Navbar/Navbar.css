@@ -5,6 +5,8 @@
   padding: 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   border-bottom: 1px solid #eee;
   z-index: 100;
 }
@@ -13,4 +15,10 @@
   margin-left: 20px;
   text-decoration: none;
   color: black;
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
 }

@@ -34,7 +34,7 @@ main {
 section {
   width: min(var(--max-width), calc(100% - 32px));
   margin: 0 auto;
-  padding: 90px 0;
+  padding: 50px 0;
 }
 
 h1,
@@ -73,7 +73,7 @@ ul {
 
 .section-header {
   max-width: 700px;
-  margin-bottom: 42px;
+  margin-bottom: 32px;
 }
 
 .card {
@@ -81,6 +81,7 @@ ul {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  padding: 28px;
 }
 
 .button {
