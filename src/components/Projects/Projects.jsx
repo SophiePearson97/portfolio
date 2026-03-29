@@ -1,6 +1,43 @@
 import "./Projects.css";
+import grimoire1 from "../../assets/images/Grimoire_1.png";
+import grimoire2 from "../../assets/images/Grimoire_2.png";
+import kasa1 from "../../assets/images/Kasa_1.png";
+import kasa2 from "../../assets/images/Kasa_2.png";
 
 const Projects = () => {
+  const projects = [
+    {
+      label: "Frontend Project",
+      title: "Kasa",
+      description:
+        "Kasa is a React-based property rental website built from Figma designs. The project focused on reusable components, routing, and a fully responsive layout.",
+      image: [kasa1, kasa2],
+      features: [
+        "Component-based architecture",
+        "React Router navigation",
+        "Responsive design",
+        "Dynamic data rendering",
+        "Reusable UI components",
+      ],
+      github: " https://github.com/SophiePearson97/kasa.git",
+    },
+    {
+      label: "Backend Project",
+      title: "Mon Vieux Grimoire",
+      description:
+        "Backend API built with Node.js and Express featuring JWT authentication, MongoDB integration, and image processing with Multer and Sharp.",
+      image: [grimoire1, grimoire2],
+      features: [
+        "JWT Authentication",
+        "Secure password hashing with bcrypt",
+        "RESTful API endpoints",
+        "Image upload and optimisation",
+        "MongoDB integration",
+      ],
+      github: "https://github.com/SophiePearson97/my-old-grimoire-backend.git",
+    },
+  ];
+
   return (
     <section id="projects" className="projects">
       <div className="section-header">
@@ -12,108 +49,49 @@ const Projects = () => {
         </p>
       </div>
 
-      <div className="projects-list">
-        <article className="project-card card">
-          <div className="project-top">
-            <p className="project-label">Project 1</p>
-            <h3>Kasa</h3>
-          </div>
+      <div className="projects-grid">
+        {projects.map((project, index) => (
+          <article key={index} className="project-card">
+            <p className="project-label">{project.label}</p>
 
-          <p className="project-description">
-            A React-based property rental website developed from Figma designs.
-            The project focused on reusable components, routing, and responsive
-            layouts.
-          </p>
+            <div className="project-image-wrapper">
+              <img
+                src={project.image[0]}
+                alt={project.title}
+                className="project-image primary"
+              />
+              <img
+                src={project.image[1]}
+                alt={project.title}
+                className="project-image secondary"
+              />
+            </div>
 
-          <div className="project-block">
-            <h4>Challenges</h4>
-            <p>
-              One of the key challenges was building a clean component structure
-              while also making sure the layout worked correctly across screen
-              sizes. I also worked through routing and UI issues during the
-              build.
-            </p>
-          </div>
+            <h3>{project.title}</h3>
 
-          <div className="project-block">
-            <h4>How I overcame them</h4>
-            <p>
-              I used React Router for navigation, broke the interface into
-              reusable components, and used CSS and media queries to improve the
-              responsive behaviour of the site.
-            </p>
-          </div>
+            <p className="project-description">{project.description}</p>
 
-          <div className="project-block">
-            <h4>Skills developed</h4>
-            <ul className="project-tags">
-              <li>React</li>
-              <li>React Router</li>
-              <li>Component Architecture</li>
-              <li>Responsive Design</li>
-            </ul>
-          </div>
+            <div className="project-section">
+              <h4>Key Features</h4>
+              <ul className="project-features">
+                {project.features.map((feature, i) => (
+                  <li key={i}>{feature}</li>
+                ))}
+              </ul>
+            </div>
 
-          <div className="project-links">
-            <a href="https://github.com/SophiePearson97/kasa.git" target="_blank" rel="noreferrer">
-              View Code
-            </a>
-            <a href="#" target="_blank" rel="noreferrer">
-              Live Site
-            </a>
-          </div>
-        </article>
-
-        <article className="project-card card">
-          <div className="project-top">
-            <p className="project-label">Project 2</p>
-            <h3>Mon Vieux Grimoire</h3>
-          </div>
-
-          <p className="project-description">
-            A full-stack book rating application with authentication, image
-            upload, and a MongoDB database. This project allowed me to work on
-            backend structure and secure API development.
-          </p>
-
-          <div className="project-block">
-            <h4>Challenges</h4>
-            <p>
-              The main challenges included JWT authentication, protecting API
-              routes, handling image uploads, and debugging issues linked to
-              requests, errors, and route setup.
-            </p>
-          </div>
-
-          <div className="project-block">
-            <h4>How I overcame them</h4>
-            <p>
-              I organised the backend using Express and MongoDB, tested routes
-              carefully with Postman, secured endpoints with JWT, and improved
-              image handling with Sharp and multer.
-            </p>
-          </div>
-
-          <div className="project-block">
-            <h4>Skills developed</h4>
-            <ul className="project-tags">
-              <li>Node.js</li>
-              <li>Express</li>
-              <li>MongoDB</li>
-              <li>JWT</li>
-              <li>API Development</li>
-            </ul>
-          </div>
-
-          <div className="project-links">
-            <a href="https://github.com/SophiePearson97/my-old-grimoire-backend.git" target="_blank" rel="noreferrer">
-              View Code
-            </a>
-            <a href="#" target="_blank" rel="noreferrer">
-              Live Site
-            </a>
-          </div>
-        </article>
+            <div className="project-links">
+              <a
+                className="button button-secondary"
+                href={project.github}
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Code
+              </a>
+            </div>
+          </article>
+        ))}
       </div>
     </section>
   );

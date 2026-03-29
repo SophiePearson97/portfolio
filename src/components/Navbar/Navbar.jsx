@@ -3,7 +3,7 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h3>My Portfolio</h3>
+      <h3>Sophie Pearson</h3>
       <div className="links">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
