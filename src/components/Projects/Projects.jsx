@@ -47,7 +47,7 @@ const projects = [
       "API integration",
       "Event handling",
     ],
-    github: "PASTE-YOUR-GITHUB-LINK",
+    github: "https://github.com/SophiePearson97/Project_3.git",
   },
   {
     label: "Optimisation Project",
@@ -61,7 +61,7 @@ const projects = [
       "Accessibility fixes",
       "Debugging",
     ],
-    github: "PASTE-YOUR-GITHUB-LINK",
+    github: "https://github.com/SophiePearson97/project-4.git",
   },
   {
     label: "HTML & CSS Project",
@@ -75,7 +75,7 @@ const projects = [
       "Design integration",
       "Clean structure",
     ],
-    github: "PASTE-YOUR-GITHUB-LINK",
+    github: "https://github.com/SophiePearson97/EN-Booki-Starter-Code.git",
   },
   {
     label: "Planning Project",
@@ -89,7 +89,6 @@ const projects = [
       "API planning",
       "Technical documentation",
     ],
-    github: "PASTE-YOUR-GITHUB-LINK",
   },
 ];
 
