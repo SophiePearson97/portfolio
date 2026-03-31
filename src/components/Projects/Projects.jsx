@@ -3,6 +3,10 @@ import grimoire1 from "../../assets/images/Grimoire_1.png";
 import grimoire2 from "../../assets/images/Grimoire_2.png";
 import kasa1 from "../../assets/images/Kasa_1.png";
 import kasa2 from "../../assets/images/Kasa_2.png";
+import booki from "../../assets/images/Booki.png";
+import sophie from "../../assets/images/SophieBluel.png";
+import nina from "../../assets/images/Nina.png";
+import menu from "../../assets/images/MenuMaker.png";
 
 const projects = [
   {
@@ -40,7 +44,7 @@ const projects = [
     title: "Sophie Bluel – Architecture Portfolio",
     description:
       "Dynamic portfolio website built with JavaScript, including filtering functionality and API integration.",
-    image: [kasa1, kasa2],
+    image: [sophie, sophie],
     features: [
       "DOM manipulation",
       "Dynamic filtering system",
@@ -54,7 +58,7 @@ const projects = [
     title: "Nina Carducci – Photographer Website",
     description:
       "Optimised an existing website to improve performance, accessibility, and SEO.",
-    image: [kasa1, kasa2],
+    image: [nina, nina],
     features: [
       "Performance optimisation",
       "SEO improvements",
@@ -68,21 +72,21 @@ const projects = [
     title: "Booki – Accommodation Website",
     description:
       "Responsive website built from mock-ups using HTML and CSS with a focus on layout and design accuracy.",
-    image: [kasa1, kasa2],
+    image: [booki, booki],
     features: [
       "Responsive layout",
       "Flexbox",
       "Design integration",
       "Clean structure",
     ],
-    github: "https://github.com/SophiePearson97/EN-Booki-Starter-Code.git",
+    github: "https://github.com/SophiePearson97/Project-2.git",
   },
   {
     label: "Planning Project",
     title: "Menu Maker (Qwenta)",
     description:
       "Planned a full web application using agile methodology, including technical specifications and API design.",
-    image: [kasa1, kasa2],
+    image: [menu, menu],
     features: [
       "Agile workflow",
       "Kanban board",
