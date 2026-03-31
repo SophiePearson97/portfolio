@@ -4,40 +4,96 @@ import grimoire2 from "../../assets/images/Grimoire_2.png";
 import kasa1 from "../../assets/images/Kasa_1.png";
 import kasa2 from "../../assets/images/Kasa_2.png";
 
-const Projects = () => {
-  const projects = [
-    {
-      label: "Frontend Project",
-      title: "Kasa",
-      description:
-        "Kasa is a React-based property rental website built from Figma designs. The project focused on reusable components, routing, and a fully responsive layout.",
-      image: [kasa1, kasa2],
-      features: [
-        "Component-based architecture",
-        "React Router navigation",
-        "Responsive design",
-        "Dynamic data rendering",
-        "Reusable UI components",
-      ],
-      github: " https://github.com/SophiePearson97/kasa.git",
-    },
-    {
-      label: "Backend Project",
-      title: "Mon Vieux Grimoire",
-      description:
-        "Backend API built with Node.js and Express featuring JWT authentication, MongoDB integration, and image processing with Multer and Sharp.",
-      image: [grimoire1, grimoire2],
-      features: [
-        "JWT Authentication",
-        "Secure password hashing with bcrypt",
-        "RESTful API endpoints",
-        "Image upload and optimisation",
-        "MongoDB integration",
-      ],
-      github: "https://github.com/SophiePearson97/my-old-grimoire-backend.git",
-    },
-  ];
+const projects = [
+  {
+    label: "Frontend Project",
+    title: "Kasa",
+    description:
+      "Kasa is a React-based property rental website built from Figma designs. The project focused on reusable components, routing, and a fully responsive layout.",
+    image: [kasa1, kasa2],
+    features: [
+      "Component-based architecture",
+      "React Router navigation",
+      "Responsive design",
+      "Dynamic data rendering",
+      "Reusable UI components",
+    ],
+    github: "https://github.com/SophiePearson97/kasa.git",
+  },
+  {
+    label: "Backend Project",
+    title: "Mon Vieux Grimoire",
+    description:
+      "Backend API built with Node.js and Express featuring JWT authentication, MongoDB integration, and image processing with Multer and Sharp.",
+    image: [grimoire1, grimoire2],
+    features: [
+      "JWT Authentication",
+      "Secure password hashing with bcrypt",
+      "RESTful API endpoints",
+      "Image upload and optimisation",
+      "MongoDB integration",
+    ],
+    github: "https://github.com/SophiePearson97/my-old-grimoire-backend.git",
+  },
+  {
+    label: "JavaScript Project",
+    title: "Sophie Bluel – Architecture Portfolio",
+    description:
+      "Dynamic portfolio website built with JavaScript, including filtering functionality and API integration.",
+    image: [kasa1, kasa2],
+    features: [
+      "DOM manipulation",
+      "Dynamic filtering system",
+      "API integration",
+      "Event handling",
+    ],
+    github: "PASTE-YOUR-GITHUB-LINK",
+  },
+  {
+    label: "Optimisation Project",
+    title: "Nina Carducci – Photographer Website",
+    description:
+      "Optimised an existing website to improve performance, accessibility, and SEO.",
+    image: [kasa1, kasa2],
+    features: [
+      "Performance optimisation",
+      "SEO improvements",
+      "Accessibility fixes",
+      "Debugging",
+    ],
+    github: "PASTE-YOUR-GITHUB-LINK",
+  },
+  {
+    label: "HTML & CSS Project",
+    title: "Booki – Accommodation Website",
+    description:
+      "Responsive website built from mock-ups using HTML and CSS with a focus on layout and design accuracy.",
+    image: [kasa1, kasa2],
+    features: [
+      "Responsive layout",
+      "Flexbox",
+      "Design integration",
+      "Clean structure",
+    ],
+    github: "PASTE-YOUR-GITHUB-LINK",
+  },
+  {
+    label: "Planning Project",
+    title: "Menu Maker (Qwenta)",
+    description:
+      "Planned a full web application using agile methodology, including technical specifications and API design.",
+    image: [kasa1, kasa2],
+    features: [
+      "Agile workflow",
+      "Kanban board",
+      "API planning",
+      "Technical documentation",
+    ],
+    github: "PASTE-YOUR-GITHUB-LINK",
+  },
+];
 
+const Projects = () => {
   return (
     <section id="projects" className="projects">
       <div className="section-header">
