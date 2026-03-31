@@ -4,9 +4,9 @@ import grimoire2 from "../../assets/images/Grimoire_2.png";
 import kasa1 from "../../assets/images/Kasa_1.png";
 import kasa2 from "../../assets/images/Kasa_2.png";
 import booki from "../../assets/images/Booki.png";
-import sophie from "../../assets/images/SophieBluel.png";
+import sophie from "../../assets/images/Sophie.png";
 import nina from "../../assets/images/Nina.png";
-import menu from "../../assets/images/MenuMaker.png";
+import menu from "../../assets/images/Menu.png";
 
 const projects = [
   {
